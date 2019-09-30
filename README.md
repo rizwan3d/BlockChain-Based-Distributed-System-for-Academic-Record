@@ -10,7 +10,7 @@ The ‘blockchain’ is the core principle behind Bitcoin digital currency. A bl
 ## Proposed System
 The proposed system is divided into two parts; Verification area and Published area. Verification area provides the details of students and their academic records to the outer world to verify it. The published area is under control of University/College where the students’ personal information and transcript data of academic records are published on the blockchain.
  
-### 3.1 Verification Area
+### Verification Area
 Verification area is a public interface to verify or to view the academic record of students by just entering government provided ID card numbers. Web-based or RestFull API is required to implement the verification area. Fully open access part of the system is connected to a node of blockchain has the permission of mining and explore blockchain.
 ID card No.---> Verification System ----> Search in Blockchain ---> Required Academic Record
 ### Published area
