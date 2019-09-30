@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>DAR-Publish</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../shared/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">DAR-Publish</a>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#student">Student</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#ar">Academic Recode</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+      <h1>DAR-Publish</h1>
+      <p class="lead">Use this page to insert data to blockchain</p>
+    </div>
+  </header>
+
+
+
+  <section id="student">
+    <div class="container">
+
+      <div id="ss" class="alert alert-success alert-dismissible" style="display: none">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Success!</strong> Student Successfully saved.
+      </div>
+
+      <div id="se" class="alert alert-danger alert-dismissible" style="display: none">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Danger!</strong> Student cannot saved Successfully.
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Insert Student</h2>
+          <form id="studentForm" action="" class="was-validated">
+            <div class="form-group">
+              <label for="sname">Government ID Card Number:</label>
+              <input type="text" class="form-control" id="gid" placeholder="Enter Government ID Card Number" name="gid"
+                required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group">
+              <label for="name">Student Name:</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter Student Name" name="name" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group">
+              <label for="sname">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter E-Mail" name="email" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group">
+              <label for="sex">Sex:</label>
+              <select id="sex" name="sex" class="custom-select mb-3">
+                <option value="male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other" selected>Other</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="ar" class="bg-light m-3" >
+    <div class="container">
+
+      <div id="ars" class="alert alert-success alert-dismissible" style="display: none">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Success!</strong> Academic Record Successfully saved.
+      </div>
+
+      <div id="are" class="alert alert-danger alert-dismissible" style="display: none">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Danger!</strong> Academic Record cannot saved Successfully.
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Insert Student's Academic Recode</h2>
+          <form id="arForm" action="" class="was-validated">
+            <div class="form-group">
+              <label for="sname">Government ID Card Number:</label>
+              <input type="text" class="form-control" id="agid" placeholder="Enter Government ID Card Number" name="gid"
+                required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group">
+              <label for="pname">Program Name:</label>
+              <input type="text" class="form-control" id="pname" placeholder="Enter Program Name" name="pname" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group">
+              <label for="year">Year:</label>
+              <input type="number" class="form-control" id="year" placeholder="Enter Year" name="year" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group">
+              <label for="semester">Semester:</label>
+              <select id="semester" name="semester" class="custom-select mb-3">
+                <option value="1st" selected>1st</option>
+                <option value="2nd">2nd</option>
+                <option value="3rd">3rd</option>
+                <option value="4th">4th</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="gp">Total Grading Point:</label>
+              <input type="number" class="form-control" id="gp" placeholder="Enter Total Grading Point" name="gp"
+                required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group">
+              <label for="op">Obtained Grading Point:</label>
+              <input type="number" class="form-control" id="op" placeholder="Enter Obtained Grading Point" name="op"
+                required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <label>Subject Informartion:</label>
+            <div class="subjectC">
+              
+            </div>
+            <a href="javascript:void(0);" class="add_button btn btn-success">Add Subject</a>
+
+            <button type="submit" class="m-1 btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Muhammad Rizwan 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../shared/vendor/jquery/jquery.min.js"></script>
+  <script src="../shared/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+  <script>
+    $(document).ready(function () {
+
+      
+      var maxField = 10; //Input fields increment limitation
+      var addButton = $('.add_button'); //Add button selector
+      var wrapper = $('.subjectC'); //Input field wrapper
+      var x = 1; //Initial field counter is 1
+
+      $("#studentForm").submit(function (event) {
+
+        event.preventDefault();
+
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var gid = $('#gid').val();
+        var sex = $('#sex').val();
+
+        var dataArray = { name: name, email: email, gid: gid, sex: sex };
+        var str = JSON.stringify(dataArray);
+        var dataHex = toHex(str);
+
+        console.log(dataHex);
+
+
+        $.ajax({
+          type: "POST",
+          url: '../api/v1/publish.php',
+          data: { signature: gid, dataHex: dataHex, type: "student" },
+          success: function (Response) {
+            var x = Response;
+            if (x == "success")
+              $("#ss").show();
+            else
+              $("#se").show();
+            console.log(x);
+          }
+        });
+      });
+
+
+      $("#arForm").submit(function (event) {
+
+        event.preventDefault();
+
+        var gid = $('#agid').val();
+        var pname = $('#pname').val();
+        var year = $('#year').val();
+        var semester = $('#semester').val();
+        var gp = $('#gp').val();
+        var op = $('#op').val();
+
+
+        var subjects = [];
+
+        for (i = 1; i < x; i++) {
+          subjects.push({  id :  $('#sid'+i).val() , subjectname :  $('#subjectname'+i).val(), subjectop :  $('#subjectop'+i).val(), subjecttp :  $('#subjecttp'+i).val()});
+        }
+
+        var dataArray = { gid: gid, pname: pname, year: year, semester: semester , gp: gp , op: op , subjects: subjects };
+        var str = JSON.stringify(dataArray);
+        var dataHex = toHex(str);
+
+        console.log(dataArray);
+        console.log(dataHex);
+
+
+        $.ajax({
+          type: "POST",
+          url: '../api/v1/publish.php',
+          data: { signature: gid, dataHex: dataHex, type: "arecord" },
+          success: function (Response) {
+            var x = Response;
+            if (x == "success")
+              $("#ars").show();
+            else
+              $("#are").show();
+            console.log(x);
+          }
+        });
+      });
+
+      $(document).on('click', '.Remove_button', function (e) {
+        e.preventDefault();
+        $(this).parent('div').remove(); //Remove field html
+        x--; //Decrement field counter
+      });
+
+
+      var fieldHTML = "";
+      //Once add button is clicked
+      $(addButton).click(function () {
+        //Check maximum number of input fields
+        if (x < maxField) {
+          fieldHTML = `<div class="border border-success rounded p-2 m-1">
+                <div class="form-group ">
+                  <label>Subject ID:</label>
+                  <input type="text" class="form-control" placeholder="Enter Subject ID" id="sid` + x +`" name="sid" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="form-group ">
+                  <label>Subject Name:</label>
+                  <input type="text" class="form-control" placeholder="Enter Subject Name" id="subjectname` + x +`" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="form-group ">
+                  <label>Obtained Grading Point:</label>
+                  <input type="number" class="form-control" placeholder="Enter Obtained Grading Point" id="subjectop` + x +`"
+                    required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+
+                <div class="form-group ">
+                  <label>Total Grading Point:</label>
+                  <input type="number" class="form-control" placeholder="Enter Total Grading Point" id="subjecttp` + x +`"
+                    required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+
+                <a href="javascript:void(0);" class="Remove_button btn btn-danger">Remove</a>
+
+              </div>`;
+          x++; //Increment field counter
+          $(wrapper).append(fieldHTML); //Add field html
+        }
+      });
+
+
+    });
+
+    function toHex(str) {
+      var arr = [];
+      for (var i = 0, l = str.length; i < l; i++) {
+        var hex = Number(str.charCodeAt(i)).toString(16);
+        arr.push(hex.length > 1 && hex || "0" + hex);
+      }
+      return arr.join('');
+    }
+
+
+  </script>
+
+
+</body>
+
+</html>
