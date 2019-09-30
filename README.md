@@ -1,4 +1,7 @@
 # BlockChain-Based-Distributed-System-for-Academic-Record
+[Muhammad Rizwan](https://rizwan3d.com/)<sup>1</sup>, [Muhammad Umer](https://www.facebook.com/its.Umer)<sup>1</sup>, [Fahad Ali](https://www.facebook.com/fahadalidarwin)<sup>2</sup>  
+ <sup>1</sup>dBlock Tech, <sup>2</sup>Department of Computer Science, Virtual University of Pakistan
+
 ## Abstract- 
 The ‘blockchain’ is the core principle behind Bitcoin digital currency. A blockchain is a decentralized, distributed technology that use to store a digital record of any event. A set of algorithms agrees to generate a new block that is valid as well as true. The data structure affiliated with each block makes it tamper-proof. This paper proposes a permanent distributed ledger of Academic record based on the private blockchain.
 
