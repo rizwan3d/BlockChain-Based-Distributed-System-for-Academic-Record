@@ -6,6 +6,7 @@
 The ‘blockchain’ is the core principle behind Bitcoin digital currency. A blockchain is a decentralized, distributed technology that use to store a digital record of any event. A set of algorithms agrees to generate a new block that is valid as well as true. The data structure affiliated with each block makes it tamper-proof. This paper proposes a permanent distributed ledger of Academic record based on the private blockchain.
 
 [Publications link 0](https://www.researchgate.net/publication/336170563_BlockChain_Based_Distributed_System_for_Academic_Record)
+
 [Publications link 1](http://dblock.website/publications/BlockChain%20Based%20Distributed%20System%20for%20Academic%20Record.pdf)
 
 ## Proposed System
